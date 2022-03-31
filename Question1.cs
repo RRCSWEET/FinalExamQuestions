@@ -8,7 +8,6 @@ namespace problem1
         static void Main(string[] args)
         {
             double monthlyIncome, loanAmount, loanPeriod, interestRate;
-            
 
             monthlyIncome = GetInput("Please enter your monthly cash flow: ");
             loanAmount = GetInput("Please enter your loan amount:  ");
@@ -18,7 +17,6 @@ namespace problem1
             PaymentCalculator payment = new PaymentCalculator(monthlyIncome, loanAmount, loanPeriod, interestRate);
             double monthlyPayment = payment.GetPayment(loanAmount, loanPeriod, interestRate);
             payment.DisplayPayment(monthlyPayment);
-
         }
 
         static double GetInput(string val)
@@ -28,7 +26,6 @@ namespace problem1
             input = ReadLine();
             return double.Parse(input);
         }
-
     }
 }
 

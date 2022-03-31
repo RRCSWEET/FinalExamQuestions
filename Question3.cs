@@ -80,9 +80,7 @@ namespace problem3
                     WriteLine("Name: " + array[0] + "     Gender: " + array[1]);
                     WriteLine(array[0] + " is a low risk or no risk.");
                 }
-
             }
-
         }
         static string GetNameGender(string val)
         {
@@ -93,33 +91,3 @@ namespace problem3
         }
     }
 }
-
-
-
-
-using System;
-using System.Collections.Generic;
-using System.Text;
-using static System.Console;
-
-namespace problem3
-{
-    class questions
-    {
-        string input;
-        public questions()
-        {
-            input = "";
-        }
-        public string question1(string val)
-        {
-            WriteLine(val);
-            input = ReadLine();
-            return input;
-        }
-
-    }
-   
-
-}
-

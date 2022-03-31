@@ -21,6 +21,7 @@ namespace ConsoleApp1
         {
             return compPick = rnum.Next(1, 3);
         }
+
         public int Winner(int userInput)
         {
             if (userInput == 1)
@@ -39,7 +40,6 @@ namespace ConsoleApp1
                 {
                     WriteLine("The computer chose scissors, you win");
                     return 20;
-                    
                 }
             }
             if (userInput == 2)
@@ -80,6 +80,7 @@ namespace ConsoleApp1
             }
             return 0;
         }
+
         public string History(int userInput)
         {
             if (userInput == 1)
@@ -120,20 +121,17 @@ namespace ConsoleApp1
                     userWin++;
 
                 }
-
             }
-
             return "the score is now User: " + userWin + "       comp: " + compWin;
         }
-
         public int GetUserWin()
         {
             return userWin;
         }
+
         public int GetCompWin()
         {
             return compWin;
         }
-
     }
 }

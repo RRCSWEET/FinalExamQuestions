@@ -19,15 +19,11 @@ namespace problem1
         }
         public double GetPayment(double loanAmount, double loanPeriod, double interestRate)
         {
-            
             return monthlyPayment = (loanAmount * (interestRate / 100)) / (1 - (1 / Math.Pow(1 + interestRate / 100, loanPeriod)));
         }
         public void DisplayPayment(double val)
         {
-
             WriteLine("your monthly payment is: $ " + val);
         }
-        
-
     }
 }

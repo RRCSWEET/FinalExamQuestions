@@ -25,7 +25,6 @@ namespace ConsoleApp1
                 computerWin = Game1.GetCompWin();
                 userWin = Game1.GetUserWin();
 
-
                 if (userWin == 4)
                 {
                     WriteLine("you have won against the computer.");
@@ -41,7 +40,6 @@ namespace ConsoleApp1
                     WriteLine("You are out of money");
                     break;
                 }
-
             } while (money > 0 || pick != 4);
         }
 
